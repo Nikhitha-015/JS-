@@ -32,6 +32,7 @@ switch(day_number){
         console.log("Monday")
         break
     case "2":
+        
         console.log("Tuesday")
         break
     case "3":
