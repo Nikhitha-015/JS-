@@ -50,6 +50,18 @@ const CheckWin=()=> {
     }
 
 }
+const noboxesleft=()=>{
+    for (let box of boxes){
+        if(box.innerText==""){
+            return false;
+        }
+    }
+    msg.innerText="It's a draw!";
+    msg_container.classList.remove("hide");
+    boxes.forEach((box)=>{
+        box.disabled=true;
+    })
+}
 const resetGame= ()=>{
     boxes.forEach((box)=>{
         box.innerText="";
