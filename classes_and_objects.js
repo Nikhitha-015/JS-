@@ -37,4 +37,32 @@ class Car{
     start(){
         console.log(`Starting ${this.brand} ${this.model}`);
     }
+    stop(){
+        console.log("Stopping");
+    }
 }
+let benz=new Car("Benz", "C-Class", 2020);
+benz.start(); // Starting Benz C-Class
+let toyota=new Car();
+
+
+class Person{
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+    greet(){
+        console.log(`Hello, my name is ${this.name}`);
+    }
+    bye(){
+        console.log("Goodbye");
+    }
+}
+let p1=new Person("John", 25);
+let p2=new Person("Jane", 30);
+p1.greet(); // Hello, my name is John
+
+// Constructor function
+// A constructor function is a special type of function that is used to create objects.
+// Even if the class doesn't have a constructor, JavaScript will create a default constructor for you. when we use 
+// the "new" keyword, it creates a new object and sets the prototype of the new object to the constructor function's prototype.
